@@ -1,0 +1,37 @@
+body{
+  background-color:white;
+  transition: 1s;
+  
+
+
+
+}
+#bmi{
+    background-color:black;
+    color: white;
+    border: 1px groove white;
+    border-radius: 10px;
+    display:inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-bottom: 150px;
+    transition: 1s;
+     
+
+}
+button{
+    padding: 10px;
+    width: 100px;
+    background-color:white ;
+    height: 40px;
+    transition: 1s;
+}
+
+h4{
+  margin: 0px;
+}
+h5{
+  margin: 0px;
+  margin-top: 5px;
+}
