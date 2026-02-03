@@ -1,61 +1,67 @@
 body{
-  background-color:white;
-  transition: 1s;
-   
+  background-color: white;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-}
 #bmi{
-    background-color:black;
-    color: white;
-    border: 1px groove white;
-    border-radius: 10px;
-    display:inline-block;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-bottom: 150px;
-    transition: 1s;
-     
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  width: 420px;
+  max-width: 90%;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
+  box-sizing: border-box;
 }
+
 button{
-    padding: 10px;
-    width: 100px;
-    background-color:white ;
-    height: 40px;
-    transition: 1s;
+  padding: 10px;
+  width: 100px;
+  background-color: white;
+  height: 40px;
+  transition: 0.2s;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
-h4{
-  margin: 0px;
-}
-h5{
-  margin: 0px;
-  margin-top: 5px;
-}
+
+h4{ margin: 0; }
+h5{ margin: 0; margin-top: 5px; }
+
 /* Responsive: tablets and small desktops */
 @media (max-width: 768px) {
   #bmi{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    display: block;
     width: 80%;
+    padding: 20px;
   }
 
   button{
     width: 140px;
   }
 }
+
 /* Responsive: phones */
 @media (max-width: 480px) {
+  body{
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
   #bmi{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    display: block;
     width: calc(100% - 20px);
-    border-radius: 8px;
+    margin: 12px;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.28);
   }
 
   button{
