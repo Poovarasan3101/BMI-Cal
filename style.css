@@ -1,9 +1,7 @@
 body{
   background-color:white;
   transition: 1s;
-  
-
-
+   
 
 }
 #bmi{
@@ -18,7 +16,6 @@ body{
     margin-bottom: 150px;
     transition: 1s;
      
-
 }
 button{
     padding: 10px;
@@ -27,11 +24,47 @@ button{
     height: 40px;
     transition: 1s;
 }
-
 h4{
   margin: 0px;
 }
 h5{
   margin: 0px;
   margin-top: 5px;
+}
+/* Responsive: tablets and small desktops */
+@media (max-width: 768px) {
+  #bmi{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: block;
+    width: 80%;
+  }
+
+  button{
+    width: 140px;
+  }
+}
+/* Responsive: phones */
+@media (max-width: 480px) {
+  #bmi{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: block;
+    width: calc(100% - 20px);
+    border-radius: 8px;
+  }
+
+  button{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  h4, h5{
+    font-size: 16px;
+  }
 }
